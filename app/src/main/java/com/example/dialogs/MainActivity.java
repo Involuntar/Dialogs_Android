@@ -83,12 +83,12 @@ public class MainActivity extends AppCompatActivity {
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String[] choices = {"1", "2", "3", "4", "5"};
+                String[] choices = {"Блок булыжника", "Блок земли", "Ведро воды", "Палка", "Железный слиток"};
                 boolean[] checkedItems = {false, false, false, false, false};
                 boolean[] rightAnswers = {true, false, false, true, true};
 
                 new AlertDialog.Builder(MainActivity.this)
-                        .setTitle("Тест")
+                        .setTitle("Что можно использовать для крафта меча в Minecraft?")
                         .setIcon(R.mipmap.test_icon)
                         .setMultiChoiceItems(choices, checkedItems, new DialogInterface.OnMultiChoiceClickListener() {
                             @Override
